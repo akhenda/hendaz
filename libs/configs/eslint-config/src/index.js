@@ -1,7 +1,43 @@
-// https://eslint.org/blog/2024/05/eslint-compatibility-utilities/
-// https://eslint.org/docs/latest/use/configure/configuration-files
-// https://eslint.org/docs/latest/extend/shareable-configs
+module.exports = {
+  configs: {
+    /**
+     * Use this for casual js/typescript projects.
+     */
+    basic: {
+      name: 'eslint-config/basic',
+      extends: 'plugin:@hendacorp/basic',
+    },
 
-const config = require('./lib/eslint-config');
+    /**
+     * Use this for React Native or Expo projects.
+     */
+    native: {
+      name: 'eslint-config/native',
+      extends: 'plugin:@hendacorp/native',
+    },
 
-module.exports = config;
+    /**
+     * Use this for Next.js projects.
+     */
+    next: {
+      name: 'eslint-config/next',
+      extends: 'plugin:@hendacorp/reactful',
+    },
+
+    /**
+     * Use this for Node.js projects.
+     */
+    nodest: {
+      name: 'eslint-config/nodest',
+      extends: 'plugin:@hendacorp/nodest',
+    },
+
+    /**
+     * Use this for React.js projects.
+     */
+    reactful: {
+      name: 'eslint-config/reactful',
+      extends: 'plugin:@hendacorp/reactful',
+    },
+  },
+};
