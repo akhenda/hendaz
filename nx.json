@@ -39,6 +39,15 @@
         "targetName": "test"
       },
       "exclude": ["apps/api-e2e/**/*"]
+    },
+    {
+      "plugin": "@nx/next/plugin",
+      "options": {
+        "startTargetName": "start",
+        "buildTargetName": "build",
+        "devTargetName": "dev",
+        "serveStaticTargetName": "serve-static"
+      }
     }
   ],
   "nxCloudAccessToken": "OWY4MDhlOGQtN2ExZC00YTZkLWI5OWItOWFjYjIyNGQ2OWI0fHJlYWQtd3JpdGU=",
