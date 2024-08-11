@@ -11,16 +11,25 @@
       }
     }
   },
-  "tags": ["client", "config"],
+  "tags": ["client", "server", "config"],
   "targets": {
     "build": {
-      "executor": "@nx/js:swc",
+      "executor": "@nx/esbuild:esbuild",
       "outputs": ["{options.outputPath}"],
       "options": {
         "outputPath": "dist/libs/configs/eslint-config",
-        "main": "libs/configs/eslint-config/src/index.ts",
+        "main": "libs/configs/eslint-config/src/index.js",
         "tsConfig": "libs/configs/eslint-config/tsconfig.lib.json",
-        "assets": ["libs/configs/eslint-config/*.md"]
+        "assets": ["libs/configs/eslint-config/*.md"],
+        "generatePackageJson": true,
+        "format": ["cjs"]
+      }
+    },
+    "test": {
+      "executor": "@nx/jest:jest",
+      "options": {
+        "jestConfig": "libs/configs/eslint-config/jest.config.js",
+        "passWithNoTests": true
       }
     },
     "nx-release-publish": {

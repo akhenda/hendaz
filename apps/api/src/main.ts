@@ -1,6 +1,8 @@
+/* eslint-disable no-console */
+/* eslint-disable no-process-env */
 import Koa from 'koa';
 
-const host = process.env.HOST ?? 'localhost';
+const host = process.env.HOST || 'localhost';
 const port = process.env.PORT ? Number(process.env.PORT) : 3000;
 
 const app = new Koa();
@@ -12,3 +14,5 @@ app.use((ctx) => {
 app.listen(port, host, () => {
   console.log(`[ ready ] http://${host}:${port}`);
 });
+
+export default app;

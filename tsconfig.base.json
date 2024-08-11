@@ -13,11 +13,12 @@
     "lib": ["es2020", "dom"],
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
+    "strictNullChecks": true,
     "baseUrl": ".",
     "paths": {
       "@hendaz/browserslist": ["libs/configs/browserslist/src/index.ts"],
       "@hendaz/constants": ["libs/configs/constants/src/index.ts"],
-      "@hendaz/eslint-config": ["libs/configs/eslint-config/src/index.ts"],
+      "@hendaz/eslint-config": ["libs/configs/eslint-config/src/index.js"],
       "@hendaz/prettier": ["libs/configs/prettier/src/index.ts"],
       "@hendaz/ts": ["libs/configs/ts/src/index.ts"]
     }
