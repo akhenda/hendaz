@@ -1,3 +1,9 @@
+# 1.0.0 (2024-08-11)
+
+### Features
+
+- **nx:** add Nx Cloud token to nx.json ([c5dc6b3](https://github.com/akhenda/hendaz/commit/c5dc6b379d5d22a4a779ac6857289e6cb2017759))
+
 # 1.0.0 (2024-08-10)
 
 ### Bug Fixes
