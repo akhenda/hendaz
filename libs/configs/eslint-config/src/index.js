@@ -21,7 +21,7 @@ module.exports = {
      */
     next: {
       name: 'eslint-config/next',
-      extends: 'plugin:@hendacorp/reactful',
+      extends: 'plugin:@hendacorp/next',
     },
 
     /**
