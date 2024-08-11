@@ -1,1 +1,1 @@
-npx nx affected:test --base=dev --head=HEAD
+npx nx affected:test --base=main --head=HEAD
