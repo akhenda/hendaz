@@ -1,0 +1,56 @@
+{
+  "name": "ts",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/configs/ts",
+  "projectType": "library",
+  "release": {
+    "version": {
+      "generatorOptions": {
+        "packageRoot": "dist/{projectRoot}",
+        "currentVersionResolver": "git-tag"
+      }
+    }
+  },
+  "tags": ["client", "config"],
+  "targets": {
+    "build": {
+      "executor": "@nx/js:swc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/libs/configs/ts",
+        "main": "libs/configs/ts/src/index.ts",
+        "tsConfig": "libs/configs/ts/tsconfig.lib.json",
+        "assets": [
+          "libs/configs/ts/*.md",
+          "libs/configs/ts/app.json",
+          "libs/configs/ts/base.json",
+          "libs/configs/ts/dom.json",
+          "libs/configs/ts/library.json",
+          "libs/configs/ts/node.base.json",
+          "libs/configs/ts/node.library.json"
+        ]
+      }
+    },
+    "nx-release-publish": {
+      "options": {
+        "packageRoot": "dist/{projectRoot}"
+      }
+    },
+    "test": {
+      "executor": "@nx/jest:jest",
+      "options": {
+        "jestConfig": "libs/configs/ts/jest.config.ts",
+        "passWithNoTests": true
+      }
+    },
+    "semantic-release": {
+      "executor": "@theunderscorer/nx-semantic-release:semantic-release",
+      "options": {
+        "github": true,
+        "changelog": true,
+        "npm": true,
+        "tagFormat": "ts-v${VERSION}"
+      }
+    }
+  }
+}

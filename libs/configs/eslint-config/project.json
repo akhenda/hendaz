@@ -1,0 +1,41 @@
+{
+  "name": "eslint-config",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/configs/eslint-config/src",
+  "projectType": "library",
+  "release": {
+    "version": {
+      "generatorOptions": {
+        "packageRoot": "dist/{projectRoot}",
+        "currentVersionResolver": "git-tag"
+      }
+    }
+  },
+  "tags": ["client", "config"],
+  "targets": {
+    "build": {
+      "executor": "@nx/js:swc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/libs/configs/eslint-config",
+        "main": "libs/configs/eslint-config/src/index.ts",
+        "tsConfig": "libs/configs/eslint-config/tsconfig.lib.json",
+        "assets": ["libs/configs/eslint-config/*.md"]
+      }
+    },
+    "nx-release-publish": {
+      "options": {
+        "packageRoot": "dist/{projectRoot}"
+      }
+    },
+    "semantic-release": {
+      "executor": "@theunderscorer/nx-semantic-release:semantic-release",
+      "options": {
+        "github": true,
+        "changelog": true,
+        "npm": true,
+        "tagFormat": "eslint-config-v${VERSION}"
+      }
+    }
+  }
+}

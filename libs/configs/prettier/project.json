@@ -1,0 +1,52 @@
+{
+  "name": "prettier",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/configs/prettier/src",
+  "projectType": "library",
+  "release": {
+    "version": {
+      "generatorOptions": {
+        "packageRoot": "dist/{projectRoot}",
+        "currentVersionResolver": "git-tag"
+      }
+    }
+  },
+  "tags": ["client", "config"],
+  "targets": {
+    "build": {
+      "executor": "@nx/js:swc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/libs/configs/prettier",
+        "main": "libs/configs/prettier/src/index.ts",
+        "tsConfig": "libs/configs/prettier/tsconfig.lib.json",
+        "assets": [
+          "libs/configs/prettier/*.md",
+          "libs/configs/prettier/index.json",
+          "libs/configs/prettier/src/tailwind.json"
+        ]
+      }
+    },
+    "nx-release-publish": {
+      "options": {
+        "packageRoot": "dist/{projectRoot}"
+      }
+    },
+    "test": {
+      "executor": "@nx/jest:jest",
+      "options": {
+        "jestConfig": "libs/configs/prettier/jest.config.ts",
+        "passWithNoTests": true
+      }
+    },
+    "semantic-release": {
+      "executor": "@theunderscorer/nx-semantic-release:semantic-release",
+      "options": {
+        "github": true,
+        "changelog": true,
+        "npm": true,
+        "tagFormat": "prettier-v${VERSION}"
+      }
+    }
+  }
+}

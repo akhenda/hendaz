@@ -15,7 +15,11 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@hendaz/utils": ["packages/utils/src/index.ts"]
+      "@hendaz/browserslist": ["libs/configs/browserslist/src/index.ts"],
+      "@hendaz/constants": ["libs/configs/constants/src/index.ts"],
+      "@hendaz/eslint-config": ["libs/configs/eslint-config/src/index.ts"],
+      "@hendaz/prettier": ["libs/configs/prettier/src/index.ts"],
+      "@hendaz/ts": ["libs/configs/ts/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

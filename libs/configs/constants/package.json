@@ -1,0 +1,13 @@
+{
+  "name": "@hendaz/constants",
+  "version": "1.0.0",
+  "description": "Projects build & runtime configs",
+  "author": "J.A.",
+  "dependencies": {
+    "@swc/helpers": "0.5.12",
+    "envalid": "8.0.0"
+  },
+  "type": "commonjs",
+  "main": "./src/index.js",
+  "typings": "./src/index.d.ts"
+}

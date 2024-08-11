@@ -1,0 +1,10 @@
+{
+  "name": "@hendaz/ts",
+  "version": "1.0.0",
+  "description": "A set of typescript configuration files that can be extended.",
+  "author": "J.A.",
+  "type": "commonjs",
+  "dependencies": {
+    "@swc/helpers": "0.5.12"
+  }
+}

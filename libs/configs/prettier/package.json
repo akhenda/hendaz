@@ -1,0 +1,12 @@
+{
+  "name": "@hendaz/prettier",
+  "version": "1.0.0",
+  "description": "Shareable prettier configuration",
+  "author": "J.A.",
+  "main": "index.json",
+  "sideEffects": false,
+  "type": "commonjs",
+  "dependencies": {
+    "@swc/helpers": "0.5.12"
+  }
+}

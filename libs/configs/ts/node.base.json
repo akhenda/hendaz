@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "display": "J.A's Node Base TS Config",
+
+  "compileOnSave": false,
+  "compilerOptions": {
+    "esModuleInterop": true,
+    "isolatedModules": true,
+    "experimentalDecorators": true,
+    "lib": ["es2020"],
+    "moduleResolution": "node",
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "strict": true
+  },
+  "exclude": ["node_modules", "tmp", "build", "dist"]
+}

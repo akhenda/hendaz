@@ -1,0 +1,9 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "display": "J.A's Application TS Config",
+
+  "extends": "./dom.json",
+  "compilerOptions": {
+    "noEmit": true
+  }
+}

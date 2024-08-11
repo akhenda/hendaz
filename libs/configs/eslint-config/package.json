@@ -1,0 +1,29 @@
+{
+  "name": "@hendaz/eslint-config",
+  "version": "1.0.0",
+  "type": "commonjs",
+  "main": "./src/index.js",
+  "typings": "./src/index.d.ts",
+  "description": "J.A's ESLint rules and configs.",
+  "author": "J.A.",
+  "keywords": [
+    "eslint",
+    "eslintconfig",
+    "eslint-config"
+  ],
+  "peerDependencies": {
+    "eslint": ">= 9",
+    "prettier": ">= 3"
+  },
+  "peerDependenciesMeta": {
+    "jest": {
+      "optional": true
+    },
+    "prettier": {
+      "optional": true
+    }
+  },
+  "dependencies": {
+    "@swc/helpers": "0.5.12"
+  }
+}

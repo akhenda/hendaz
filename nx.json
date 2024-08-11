@@ -7,20 +7,23 @@
       "!{projectRoot}/.eslintrc.json",
       "!{projectRoot}/eslint.config.js",
       "!{projectRoot}/**/?(*.)+(spec|test).[jt]s?(x)?(.snap)",
-      "!{projectRoot}/tsconfig.spec.json"
+      "!{projectRoot}/tsconfig.spec.json",
+      "!{projectRoot}/jest.config.[jt]s",
+      "!{projectRoot}/src/test-setup.[jt]s",
+      "!{projectRoot}/test-setup.[jt]s"
     ],
-    "sharedGlobals": []
+    "sharedGlobals": ["{workspaceRoot}/.github/workflows/merge.yml"]
   },
-  "nxCloudAccessToken": "OWY4MDhlOGQtN2ExZC00YTZkLWI5OWItOWFjYjIyNGQ2OWI0fHJlYWQtd3JpdGU=",
   "targetDefaults": {
-    "@nx/js:swc": {
+    "@nx/esbuild:esbuild": {
       "cache": true,
       "dependsOn": ["^build"],
       "inputs": ["production", "^production"]
     },
-    "@nx/vite:test": {
+    "@nx/js:swc": {
       "cache": true,
-      "inputs": ["default", "^production"]
+      "dependsOn": ["^build"],
+      "inputs": ["production", "^production"]
     }
   },
   "plugins": [
@@ -29,6 +32,19 @@
       "options": {
         "targetName": "lint"
       }
+    },
+    {
+      "plugin": "@nx/jest/plugin",
+      "options": {
+        "targetName": "test"
+      },
+      "exclude": ["apps/api-e2e/**/*"]
     }
-  ]
+  ],
+  "nxCloudAccessToken": "OWY4MDhlOGQtN2ExZC00YTZkLWI5OWItOWFjYjIyNGQ2OWI0fHJlYWQtd3JpdGU=",
+  "release": {
+    "version": {
+      "preVersionCommand": "bunx nx run-many -t build"
+    }
+  }
 }
