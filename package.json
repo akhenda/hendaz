@@ -37,6 +37,9 @@
     "axios": "1.7.5",
     "envalid": "8.0.0",
     "koa": "2.15.3",
+    "next": "14.2.3",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
     "tslib": "2.7.0"
   },
   "devDependencies": {
@@ -50,6 +53,7 @@
     "@nx/eslint-plugin": "19.6.2",
     "@nx/jest": "19.6.2",
     "@nx/js": "19.6.2",
+    "@nx/next": "19.6.2",
     "@nx/node": "19.6.2",
     "@nx/workspace": "19.6.2",
     "@swc-node/register": "1.10.9",
