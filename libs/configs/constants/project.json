@@ -1,7 +1,7 @@
 {
   "name": "constants",
   "$schema": "../../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "libs/configs/constants/src",
+  "sourceRoot": "libs/configs/constants",
   "projectType": "library",
   "release": {
     "version": {
@@ -18,7 +18,7 @@
       "outputs": ["{options.outputPath}"],
       "options": {
         "outputPath": "dist/libs/configs/constants",
-        "main": "libs/configs/constants/src/index.ts",
+        "main": "libs/configs/constants/index.ts",
         "tsConfig": "libs/configs/constants/tsconfig.lib.json",
         "assets": ["libs/configs/constants/*.md"]
       }

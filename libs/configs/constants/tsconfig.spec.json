@@ -5,5 +5,15 @@
     "module": "commonjs",
     "types": ["jest", "node"]
   },
-  "include": ["jest.config.ts", "src/**/*.test.ts", "src/**/*.spec.ts", "src/**/*.d.ts"]
+  "include": [
+    "jest.config.ts",
+    "test-setup.ts",
+    "src/**/*.test.ts",
+    "client/**/*.spec.ts",
+    "client/**/*.d.ts",
+    "server/**/*.spec.ts",
+    "server/**/*.d.ts",
+    "src/**/*.spec.ts",
+    "src/**/*.d.ts"
+  ]
 }

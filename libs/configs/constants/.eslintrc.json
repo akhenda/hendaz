@@ -1,13 +1,18 @@
 {
-  "extends": ["../../../.eslintrc.json"],
-  "ignorePatterns": ["!**/*"],
+  "extends": ["../../../.eslintrc.json", "@hendaz/eslint-config/node"],
+  "ignorePatterns": ["!**/*", "jest.config.ts"],
   "overrides": [
     {
       "files": ["*.ts", "*.tsx", "*.js", "*.jsx"],
-      "rules": {}
+      "rules": {
+        "no-process-env": "off"
+      }
     },
     {
       "files": ["*.ts", "*.tsx"],
+      "parserOptions": {
+        "project": ["libs/configs/constants/tsconfig.*?.json"]
+      },
       "rules": {}
     },
     {

@@ -1,10 +1,12 @@
-import env from './index';
+import config from './index';
+
+const { env, base } = config;
 
 describe('constants/client/mobile', () => {
   it('get the default mobile envs', () => {
     // Read an environment variable, which is validated and cleaned during
     // and/or filtering that you specified with cleanEnv().
-    expect(env.ADMIN_EMAIL).toEqual('admin@example.com');
+    expect(env.ADMIN_EMAIL).toBe('admin@example.com');
 
     // Envalid checks for NODE_ENV automatically, and provides the following
     // shortcut (boolean) properties for checking its value:
@@ -17,7 +19,7 @@ describe('constants/client/mobile', () => {
 
     expect(env.USE_REACTOTRON).toBe(true);
     expect(env.USE_REDUX_LOGGER).toBe(true);
-    expect(env.persistNavigation).toBe('never');
-    expect(env.catchErrors).toBe('always');
+    expect(base.persistNavigation).toBe('never');
+    expect(base.catchErrors).toBe('always');
   });
 });
