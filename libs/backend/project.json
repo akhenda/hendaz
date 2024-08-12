@@ -1,0 +1,22 @@
+{
+  "name": "backend",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/backend",
+  "projectType": "library",
+  "tags": [],
+  "// targets": "to see all targets run: nx show project backend --web",
+  "targets": {
+    "dev": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "convex dev"
+      }
+    },
+    "setup": {
+      "executor": "nx:run-commands",
+      "options": {
+        "commands": ["convex dev --until-success"]
+      }
+    }
+  }
+}
