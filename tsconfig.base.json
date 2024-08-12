@@ -16,6 +16,7 @@
     "strictNullChecks": true,
     "baseUrl": ".",
     "paths": {
+      "@hendaz/backend": ["libs/backend/src/index.ts"],
       "@hendaz/browserslist": ["libs/configs/browserslist/src/index.ts"],
       "@hendaz/constants": ["libs/configs/constants/src/index.ts"],
       "@hendaz/eslint-config": ["libs/configs/eslint-config/src/index.js"],
