@@ -1,0 +1,9 @@
+{
+  "name": "file-drive-e2e",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/file-drive-e2e/src",
+  "tags": [],
+  "implicitDependencies": ["file-drive"],
+  "// targets": "to see all targets run: nx show project file-drive-e2e --web",
+  "targets": {}
+}
