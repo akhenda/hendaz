@@ -12,6 +12,7 @@
     "dsznajder.es7-react-js-snippets",
     "bradlc.vscode-tailwindcss",
     "lokalise.i18n-ally",
-    "wesbos.theme-cobalt2"
+    "wesbos.theme-cobalt2",
+    "ms-playwright.playwright"
   ]
 }

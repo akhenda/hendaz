@@ -1,0 +1,9 @@
+{
+  "name": "file-drive",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/file-drive",
+  "projectType": "application",
+  "tags": ["client"],
+  "// targets": "to see all targets run: nx show project file-drive --web",
+  "targets": {}
+}

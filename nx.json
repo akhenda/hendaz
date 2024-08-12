@@ -48,12 +48,26 @@
         "devTargetName": "dev",
         "serveStaticTargetName": "serve-static"
       }
+    },
+    {
+      "plugin": "@nx/playwright/plugin",
+      "options": {
+        "targetName": "e2e"
+      }
     }
   ],
   "nxCloudAccessToken": "OWY4MDhlOGQtN2ExZC00YTZkLWI5OWItOWFjYjIyNGQ2OWI0fHJlYWQtd3JpdGU=",
   "release": {
     "version": {
       "preVersionCommand": "bunx nx run-many -t build"
+    }
+  },
+  "generators": {
+    "@nx/next": {
+      "application": {
+        "style": "tailwind",
+        "linter": "eslint"
+      }
     }
   }
 }
