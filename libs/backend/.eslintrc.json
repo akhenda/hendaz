@@ -1,6 +1,6 @@
 {
-  "extends": ["../../.eslintrc.json"],
-  "ignorePatterns": ["!**/*"],
+  "extends": ["../../.eslintrc.json", "@hendaz/eslint-config/basic"],
+  "ignorePatterns": ["!**/*", "convex/_generated/**/*", "jest.config.ts", "tsconfig.json"],
   "overrides": [
     {
       "files": ["*.ts", "*.tsx", "*.js", "*.jsx"],
@@ -8,6 +8,9 @@
     },
     {
       "files": ["*.ts", "*.tsx"],
+      "parserOptions": {
+        "project": ["libs/backend/tsconfig.json", "libs/backend/tsconfig.*?.json"]
+      },
       "rules": {}
     },
     {

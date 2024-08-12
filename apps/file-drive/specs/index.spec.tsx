@@ -1,11 +1,11 @@
-import React from 'react';
 import { render } from '@testing-library/react';
 
 import Page from '../src/app/page';
 
 describe('Page', () => {
-  it('should render successfully', () => {
+  it('renders successfully', () => {
     const { baseElement } = render(<Page />);
-    expect(baseElement).toBeTruthy();
+
+    expect(baseElement).toBeDefined();
   });
 });

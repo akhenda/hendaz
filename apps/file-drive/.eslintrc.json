@@ -1,6 +1,20 @@
 {
-  "extends": ["plugin:@nx/react-typescript", "next", "next/core-web-vitals", "../../.eslintrc.json"],
-  "ignorePatterns": ["!**/*", ".next/**/*", "next.config.js", "tailwind.config.js", "postcss.config.js"],
+  "extends": [
+    "plugin:@nx/react-typescript",
+    "next",
+    "next/core-web-vitals",
+    "../../.eslintrc.json",
+    "@hendaz/eslint-config/next"
+  ],
+  "ignorePatterns": [
+    "!**/*",
+    ".next/**/*",
+    "next.config.js",
+    "tailwind.config.js",
+    "postcss.config.js",
+    "jest.config.ts",
+    "next-env.d.ts"
+  ],
   "overrides": [
     {
       "files": ["*.ts", "*.tsx", "*.js", "*.jsx"],
