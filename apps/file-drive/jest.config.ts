@@ -1,4 +1,3 @@
-/* eslint-disable */
 export default {
   displayName: 'file-drive',
   preset: '../../jest.preset.js',
