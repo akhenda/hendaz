@@ -34,6 +34,7 @@
     }
   },
   "dependencies": {
+    "@clerk/nextjs": "5.3.1",
     "axios": "1.7.5",
     "convex": "1.14.0",
     "envalid": "8.0.0",
