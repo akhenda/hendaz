@@ -17,6 +17,7 @@ export interface CleanedEnvAccessors {
 // https://github.com/morinokami/next-zodenv/tree/main#nextjs
 const env = zenv({
   ADMIN_EMAIL: { value: 'admin@example.com', zodType: z.string().email().optional() },
+  NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY: { value: process.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY, zodType: z.string() },
   NEXT_PUBLIC_CONVEX_URL: { value: process.env.NEXT_PUBLIC_CONVEX_URL, zodType: z.string() },
   NODE_ENV: z.enum(['development', 'test', 'production', 'staging']).optional(),
 });
