@@ -13,14 +13,14 @@
  *
  * Read more here: https://reactnative.dev/docs/security#storing-sensitive-info
  */
-import baseConfig from './base';
-import devConfig from './dev';
-import prodConfig from './prod';
+import base from './base';
+import dev from './dev';
+import prod from './prod';
 
-let env = devConfig;
+let env = dev;
 
-if (env.isProd) env = prodConfig;
+if (env.isProd) env = prod;
 
-const config = { base: baseConfig, env };
+const config = { base, env };
 
 export default config;

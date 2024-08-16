@@ -5,7 +5,15 @@
     "declaration": true,
     "types": ["node"]
   },
-  "include": ["src/**/*.ts", "client/**/*.ts", "server/**/*.ts", "index.ts", "test-setup.ts"],
+  "include": [
+    "src/**/*.ts",
+    "client/**/*.ts",
+    "mobile/**/*.ts",
+    "web/**/*.ts",
+    "server/**/*.ts",
+    "index.ts",
+    "test-setup.ts"
+  ],
   "exclude": [
     "jest.config.ts",
     "test-setup.ts",
@@ -13,6 +21,10 @@
     "src/**/*.test.ts",
     "client/**/*.spec.ts",
     "client/**/*.test.ts",
+    "mobile/**/*.spec.ts",
+    "mobile/**/*.test.ts",
+    "web/**/*.spec.ts",
+    "web/**/*.test.ts",
     "server/**/*.spec.ts",
     "server/**/*.test.ts"
   ]
