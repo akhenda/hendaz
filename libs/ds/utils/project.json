@@ -1,5 +1,5 @@
 {
-  "name": "utils",
+  "name": "ds-utils",
   "$schema": "../../../node_modules/nx/schemas/project-schema.json",
   "sourceRoot": "libs/ds/utils/src",
   "projectType": "library",

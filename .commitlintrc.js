@@ -19,6 +19,8 @@ async function getConfig() {
           'version',
           'release',
           'deploy',
+          'configs',
+          'ds',
           ...getProjects(ctx, ({ tags }) => {
             if (!tags) return [];
 

@@ -3,13 +3,14 @@
   "style": "default",
   "rsc": false,
   "tailwind": {
-    "config": "libs/ds/utils/tailwind.config.js",
-    "css": "libs/ds/utils/global.css",
+    "config": "libs/ds/utils/src/tailwind.config.ts",
+    "css": "libs/ds/utils/src/global.css",
     "baseColor": "neutral",
     "cssVariables": true
   },
   "aliases": {
-    "components": "@hendaz/ds/ui-kit",
+    "components": "@hendaz/ds/ui-kit/lib",
+    "ui": "@hendaz/ds/ui-kit/lib/ui",
     "utils": "@hendaz/ds/utils"
   }
 }
