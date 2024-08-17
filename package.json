@@ -25,7 +25,8 @@
     "build": "bun nx run-many --target=build --all",
     "test": "bun nx run-many --target=test --all",
     "lint": "bun nx run-many --target=lint --all",
-    "lint:fix": "bun nx run-many --target=lint:fix --all"
+    "lint:fix": "bun nx run-many --target=lint:fix --all",
+    "add:component": "TS_NODE_PROJECT=tsconfig.base.json bunx shadcn-ui@latest add"
   },
   "config": {
     "commitizen": {
