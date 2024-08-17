@@ -19,6 +19,10 @@
       "@hendaz/backend": ["libs/backend/src/index.ts"],
       "@hendaz/browserslist": ["libs/configs/browserslist/src/index.ts"],
       "@hendaz/constants": ["libs/configs/constants/index.ts"],
+      "@hendaz/ds/ui-kit": ["libs/ds/ui-kit/src/index.ts"],
+      "@hendaz/ds/ui-kit/*": ["libs/ds/ui-kit/src/*"],
+      "@hendaz/ds/utils": ["libs/ds/utils/src/index.ts"],
+      "@hendaz/ds/utils/*": ["libs/ds/utils/src/*"],
       "@hendaz/eslint-config": ["libs/configs/eslint-config/src/index.js"],
       "@hendaz/prettier": ["libs/configs/prettier/src/index.ts"],
       "@hendaz/ts": ["libs/configs/ts/src/index.ts"]
