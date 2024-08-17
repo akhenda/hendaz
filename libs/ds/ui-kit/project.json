@@ -1,0 +1,12 @@
+{
+  "name": "ui-kit",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/ds/ui-kit/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "add-component": {
+      "executor": "@nx-extend/shadcn-ui:add"
+    }
+  }
+}
