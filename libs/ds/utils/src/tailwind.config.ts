@@ -1,16 +1,24 @@
 import { createGlobPatternsForDependencies } from '@nx/react/tailwind';
 import { join } from 'node:path';
 import TailwindAnimate from 'tailwindcss-animate';
-
 import type { Config } from 'tailwindcss';
+import { fontFamily } from 'tailwindcss/defaultTheme';
 
 export function buildConfig(appDir: string): Config {
   return {
+    darkMode: ['class'],
     content: [
       join(appDir, '{src,pages,components,app}/**/*!(*.stories|*.spec).{ts,tsx,html}'),
       ...createGlobPatternsForDependencies(appDir),
     ],
     theme: {
+      container: {
+        center: true,
+        padding: '2rem',
+        screens: {
+          '2xl': '1400px',
+        },
+      },
       extend: {
         colors: {
           border: 'hsl(var(--border))',
@@ -51,6 +59,9 @@ export function buildConfig(appDir: string): Config {
           lg: `var(--radius)`,
           md: `calc(var(--radius) - 2px)`,
           sm: 'calc(var(--radius) - 4px)',
+        },
+        fontFamily: {
+          sans: ['var(--font-sans)', ...fontFamily.sans],
         },
         keyframes: {
           'accordion-down': {
