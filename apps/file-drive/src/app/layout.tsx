@@ -1,3 +1,7 @@
+import { Inter as FontSans } from 'next/font/google';
+
+import { cn } from '@hendaz/ds/utils';
+
 import { ConvexClientProvider } from './ConvexClientProvider';
 
 import './global.css';
@@ -7,10 +11,15 @@ export const metadata = {
   title: 'Welcome to file-drive',
 };
 
+const fontSans = FontSans({
+  subsets: ['latin'],
+  variable: '--font-sans',
+});
+
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <body>
+      <body className={cn('min-h-screen bg-background font-sans antialiased', fontSans.variable)}>
         <ConvexClientProvider>{children}</ConvexClientProvider>
       </body>
     </html>
