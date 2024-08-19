@@ -9,3 +9,6 @@
 .github
 /.next
 /public
+
+/libs/backend/convex/_generated/**/*
+libs/backend/convex/_generated/**/*

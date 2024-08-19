@@ -16,7 +16,7 @@
     "strictNullChecks": true,
     "baseUrl": ".",
     "paths": {
-      "@hendaz/backend": ["libs/backend/src/index.ts"],
+      "@hendaz/backend/*": ["libs/backend/*"],
       "@hendaz/browserslist": ["libs/configs/browserslist/src/index.ts"],
       "@hendaz/constants": ["libs/configs/constants/index.ts"],
       "@hendaz/ds/ui-kit": ["libs/ds/ui-kit/src/index.ts"],
