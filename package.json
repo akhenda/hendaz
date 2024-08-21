@@ -60,7 +60,7 @@
     "@theunderscorer/nx-semantic-release": "2.12.0",
     "@types/jest": "29.5.12",
     "@types/koa": "2.15.0",
-    "@types/node": "22.4.2",
+    "@types/node": "22.5.0",
     "@typescript-eslint/eslint-plugin": "7.18.0",
     "@typescript-eslint/parser": "7.18.0",
     "cz-git": "1.9.4",
