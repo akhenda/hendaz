@@ -4,7 +4,7 @@
   "license": "MIT",
   "private": true,
   "volta": {
-    "node": "22.6.0",
+    "node": "22.7.0",
     "bun": "1"
   },
   "workspaces": [
