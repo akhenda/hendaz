@@ -1,7 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema.json",
   "style": "default",
-  "rsc": false,
+  "rsc": true,
+  "tsx": true,
   "tailwind": {
     "config": "libs/ds/utils/src/tailwind.config.ts",
     "css": "libs/ds/utils/src/global.css",

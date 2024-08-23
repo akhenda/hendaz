@@ -1,8 +1,11 @@
 import { Inter as FontSans } from 'next/font/google';
 
+import { Toaster } from '@hendaz/ds/ui-kit/lib/ui/toaster';
 import { cn } from '@hendaz/ds/utils';
 
 import { ConvexClientProvider } from './ConvexClientProvider';
+import Footer from './footer';
+import Header from './header';
 
 import './global.css';
 
@@ -20,7 +23,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en">
       <body className={cn('min-h-screen bg-background font-sans antialiased', fontSans.variable)}>
-        <ConvexClientProvider>{children}</ConvexClientProvider>
+        <ConvexClientProvider>
+          <Toaster />
+          <Header />
+          {children}
+          <Footer />
+        </ConvexClientProvider>
       </body>
     </html>
   );
