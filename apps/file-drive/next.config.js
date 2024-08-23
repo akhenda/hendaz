@@ -12,6 +12,10 @@ const nextConfig = {
     // See: https://github.com/gregberge/svgr
     svgr: false,
   },
+
+  images: {
+    remotePatterns: [{ hostname: 'coordinated-nightingale-655.convex.cloud' }],
+  },
 };
 
 const plugins = [
