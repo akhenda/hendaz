@@ -37,7 +37,7 @@
     "axios": "1.7.5",
     "envalid": "8.0.0",
     "koa": "2.15.3",
-    "tslib": "2.6.3"
+    "tslib": "2.7.0"
   },
   "devDependencies": {
     "@commitlint/cli": "19.4.0",
