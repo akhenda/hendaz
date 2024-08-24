@@ -11,7 +11,11 @@ import { Card, CardContent, CardFooter, CardHeader, CardTitle } from '@hendaz/ds
 
 import FileCardActions from './file-actions';
 
-function FileCard({ file }: { file: Doc<'files'> & { isFavorited: boolean; url: string | null } }) {
+interface FileCardProps {
+  readonly file: Doc<'files'> & { isFavorited: boolean; url: string | null };
+}
+
+function FileCard({ file }: FileCardProps) {
   const userProfile = useQuery(api.users.getUserProfile, { userId: file.userId });
 
   const typeIcons = {
