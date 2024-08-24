@@ -101,43 +101,41 @@ function UploadButton() {
           <DialogDescription>This file will be accessible by anyone in your organization</DialogDescription>
         </DialogHeader>
 
-        <>
-          <Form {...form}>
-            <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
-              <FormField
-                control={form.control}
-                name="title"
-                render={({ field }) => (
-                  <FormItem>
-                    <FormLabel>Title</FormLabel>
-                    <FormControl>
-                      <Input {...field} />
-                    </FormControl>
-                    <FormMessage />
-                  </FormItem>
-                )}
-              />
+        <Form {...form}>
+          <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
+            <FormField
+              control={form.control}
+              name="title"
+              render={({ field }) => (
+                <FormItem>
+                  <FormLabel>Title</FormLabel>
+                  <FormControl>
+                    <Input {...field} />
+                  </FormControl>
+                  <FormMessage />
+                </FormItem>
+              )}
+            />
 
-              <FormField
-                control={form.control}
-                name="file"
-                render={() => (
-                  <FormItem>
-                    <FormLabel>File</FormLabel>
-                    <FormControl>
-                      <Input type="file" {...fileRef} />
-                    </FormControl>
-                    <FormMessage />
-                  </FormItem>
-                )}
-              />
-              <Button type="submit" disabled={form.formState.isSubmitting} className="flex gap-1">
-                {form.formState.isSubmitting && <Loader2 className="h-4 w-4 animate-spin" />}
-                Submit
-              </Button>
-            </form>
-          </Form>
-        </>
+            <FormField
+              control={form.control}
+              name="file"
+              render={() => (
+                <FormItem>
+                  <FormLabel>File</FormLabel>
+                  <FormControl>
+                    <Input type="file" {...fileRef} />
+                  </FormControl>
+                  <FormMessage />
+                </FormItem>
+              )}
+            />
+            <Button type="submit" disabled={form.formState.isSubmitting} className="flex gap-1">
+              {form.formState.isSubmitting && <Loader2 className="h-4 w-4 animate-spin" />}
+              Submit
+            </Button>
+          </form>
+        </Form>
       </DialogContent>
     </Dialog>
   );

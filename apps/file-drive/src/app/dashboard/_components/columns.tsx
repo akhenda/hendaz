@@ -10,12 +10,16 @@ import { Avatar, AvatarFallback, AvatarImage } from '@hendaz/ds/ui-kit/lib/ui/av
 
 import FileCardActions from './file-actions';
 
+interface ColumnsProps {
+  readonly userId: Id<'users'>;
+}
+
 export type ColumnDefinition<T extends RowData = object, U = unknown> = ColumnDef<
   Doc<'files'> & { url: string | null; isFavorited: boolean } & T,
   U
 >;
 
-function UserCell({ userId }: { userId: Id<'users'> }) {
+function UserCell({ userId }: ColumnsProps) {
   const userProfile = useQuery(api.users.getUserProfile, { userId });
 
   return (

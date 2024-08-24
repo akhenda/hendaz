@@ -18,6 +18,12 @@ import DataTable from './file-table';
 import SearchBar from './search-bar';
 import UploadButton from './upload-button';
 
+interface FileBrowserProps {
+  readonly title: string;
+  readonly favoritesOnly?: boolean;
+  readonly deletedOnly?: boolean;
+}
+
 function Placeholder() {
   return (
     <div className="flex flex-col gap-8 w-full items-center mt-24">
@@ -28,15 +34,7 @@ function Placeholder() {
   );
 }
 
-function FileBrowser({
-  title,
-  favoritesOnly,
-  deletedOnly,
-}: {
-  title: string;
-  favoritesOnly?: boolean;
-  deletedOnly?: boolean;
-}) {
+function FileBrowser({ title, favoritesOnly, deletedOnly }: FileBrowserProps) {
   const { isLoaded: orgIsLoadded, organization } = useOrganization();
   const { isLoaded: userIsLoaded, user } = useUser();
   const [query, setQuery] = useState('');
@@ -88,8 +86,8 @@ function FileBrowser({
             <Label htmlFor="type-select">Type Filter</Label>
             <Select
               value={type}
-              onValueChange={(newType) => {
-                setType(newType as any);
+              onValueChange={(newType: 'image' | 'csv' | 'pdf' | 'all') => {
+                setType(newType);
               }}
             >
               <SelectTrigger id="type-select" className="w-[180px]">

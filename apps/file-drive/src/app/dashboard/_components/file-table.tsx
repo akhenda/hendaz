@@ -5,8 +5,8 @@ import { ColumnDef, flexRender, getCoreRowModel, useReactTable } from '@tanstack
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@hendaz/ds/ui-kit/lib/ui/table';
 
 interface DataTableProps<TData, TValue> {
-  columns: ColumnDef<TData, TValue>[];
-  data: TData[];
+  readonly columns: ColumnDef<TData, TValue>[];
+  readonly data: TData[];
 }
 
 function DataTable<TData, TValue>({ columns, data }: DataTableProps<TData, TValue>) {

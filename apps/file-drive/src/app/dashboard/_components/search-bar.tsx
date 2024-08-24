@@ -12,7 +12,12 @@ const formSchema = z.object({ query: z.string().min(0).max(200) });
 
 type FormSchema = z.infer<typeof formSchema>;
 
-function SearchBar({ query, setQuery }: { query: string; setQuery: Dispatch<SetStateAction<string>> }) {
+interface SearchBarProps {
+  readonly query: string;
+  readonly setQuery: Dispatch<SetStateAction<string>>;
+}
+
+function SearchBar({ query, setQuery }: SearchBarProps) {
   const form = useForm<FormSchema>({
     defaultValues: { query },
     resolver: zodResolver(formSchema),

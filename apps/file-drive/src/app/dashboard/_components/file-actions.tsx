@@ -24,7 +24,12 @@ import {
 } from '@hendaz/ds/ui-kit/lib/ui/dropdown-menu';
 import { useToast } from '@hendaz/ds/ui-kit/lib/ui/use-toast';
 
-function FileCardActions({ file, isFavorited }: { file: Doc<'files'> & { url: string | null }; isFavorited: boolean }) {
+interface FileCardActionsProps {
+  readonly file: Doc<'files'> & { url: string | null };
+  readonly isFavorited: boolean;
+}
+
+function FileCardActions({ file, isFavorited }: FileCardActionsProps) {
   const { toast } = useToast();
   const me = useQuery(api.users.getMe);
   const deleteFile = useMutation(api.files.deleteFile);
