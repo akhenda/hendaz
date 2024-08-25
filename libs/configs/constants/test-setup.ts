@@ -7,6 +7,10 @@ process.env = {
   // Make a copy
   ...oldEnv,
   API_KEY: 'fake_api_key',
+  CLERK_HOSTNAME: 'clerk.dev',
+  CLERK_WEBHOOK_SECRET: 'fake_webhook_secret',
+  NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY: 'fake_publishable_key',
+  NEXT_PUBLIC_CONVEX_URL: 'fake_convex_url',
 };
 
 // beforeEach(() => {
