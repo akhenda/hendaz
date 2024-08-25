@@ -6,6 +6,5 @@ const env = cleanEnv(process.env, {
   CLERK_WEBHOOK_SECRET: str({ default: '', desc: 'This should be configured on Convex Dashboard' }),
   NODE_ENV: str({ choices: ['development', 'test', 'production', 'staging'] }),
 });
-console.log('env: ', env);
 
 export default env;
