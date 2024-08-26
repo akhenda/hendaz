@@ -36,6 +36,9 @@ jobs:
         run: |
           bun nx affected:test --ci --coverage
           bun nx affected:build
+        env:
+          NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY: ${{ secrets.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY }}
+          NEXT_PUBLIC_CONVEX_URL: ${{ secrets.NEXT_PUBLIC_CONVEX_URL }}
 
       - name: 🧐 Lint projects
         # Continue to the next step even if this fails
