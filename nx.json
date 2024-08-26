@@ -54,6 +54,20 @@
       "options": {
         "targetName": "e2e"
       }
+    },
+    {
+      "plugin": "@nx/expo/plugin",
+      "options": {
+        "startTargetName": "start",
+        "buildTargetName": "build",
+        "prebuildTargetName": "prebuild",
+        "serveTargetName": "serve",
+        "installTargetName": "install",
+        "exportTargetName": "export",
+        "submitTargetName": "submit",
+        "runIosTargetName": "run-ios",
+        "runAndroidTargetName": "run-android"
+      }
     }
   ],
   "nxCloudAccessToken": "OWY4MDhlOGQtN2ExZC00YTZkLWI5OWItOWFjYjIyNGQ2OWI0fHJlYWQtd3JpdGU=",
