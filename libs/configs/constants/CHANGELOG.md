@@ -1,3 +1,17 @@
+# [1.1.0-rc.1](https://github.com/akhenda/hendaz/compare/constants-v1.0.0...constants-v1.1.0-rc.1) (2024-08-26)
+
+### Bug Fixes
+
+- **constants:** :bug: next.js env issues ([58a6743](https://github.com/akhenda/hendaz/commit/58a674302c158121059c50a95801dd52f9252149))
+- **deps:** update all non-major dependencies ([5234c97](https://github.com/akhenda/hendaz/commit/5234c97cfdb7c4856ce42fcdcc86d9da6bade8cb))
+- **deps:** update dependency tslib to v2.7.0 ([8c3faa7](https://github.com/akhenda/hendaz/commit/8c3faa73e4a6e65001dd5146681f66bf3050ab09))
+
+### Features
+
+- **file-drive:** :sparkles: init ([594540b](https://github.com/akhenda/hendaz/commit/594540b23112cc2f6d4d8aa8e6892c0635dfa21e))
+- **file-drive:** :sparkles: mvp - WIP ([04cb4d8](https://github.com/akhenda/hendaz/commit/04cb4d8f24385b492b34c48be8c43783523c3c11))
+- **ui-kit:** :sparkles: set up @nx-extend/shadcn-ui ([424a308](https://github.com/akhenda/hendaz/commit/424a3084d0c8e5e56116f43a1664d7afa6dc0c46))
+
 # 1.0.0 (2024-08-11)
 
 ### Features
