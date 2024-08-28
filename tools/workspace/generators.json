@@ -1,0 +1,9 @@
+{
+  "generators": {
+    "convex": {
+      "factory": "./src/generators/convex/generator",
+      "schema": "./src/generators/convex/schema.json",
+      "description": "convex generator"
+    }
+  }
+}
