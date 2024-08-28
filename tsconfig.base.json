@@ -25,7 +25,8 @@
       "@hendaz/ds/utils/*": ["libs/ds/utils/src/*"],
       "@hendaz/eslint-config": ["libs/configs/eslint-config/src/index.js"],
       "@hendaz/prettier": ["libs/configs/prettier/src/index.ts"],
-      "@hendaz/ts": ["libs/configs/ts/src/index.ts"]
+      "@hendaz/ts": ["libs/configs/ts/src/index.ts"],
+      "@hendaz/workspace": ["tools/workspace/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
