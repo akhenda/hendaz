@@ -7,4 +7,6 @@ export default {
   },
   moduleFileExtensions: ['ts', 'js', 'html'],
   coverageDirectory: '../../coverage/tools/workspace',
+  forceExit: true,
+  detectOpenHandles: true,
 };

@@ -5,6 +5,11 @@ module.exports = {
   extends: ['plugin:@hendacorp/basic'],
   overrides: [
     {
+      files: '*.json',
+      parser: 'jsonc-eslint-parser',
+      rules: {},
+    },
+    {
       files: ['*.ts', '*.tsx'],
       settings: {
         'import/resolver': {

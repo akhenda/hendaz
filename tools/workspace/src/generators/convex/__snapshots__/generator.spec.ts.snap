@@ -1,0 +1,173 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`convex generator snapshots should generate files 1`] = `
+"{
+  "functions": "./test/convex"
+}
+"
+`;
+
+exports[`convex generator snapshots should generate files 2`] = `
+"{
+  "extends": [
+    "../.eslintrc.json"
+  ],
+  "ignorePatterns": [
+    "!**/*",
+    "convex/_generated/**/*",
+    "vite.config.ts",
+    "tsconfig.json"
+  ],
+  "overrides": [
+    {
+      "files": [
+        "*.ts",
+        "*.tsx",
+        "*.js",
+        "*.jsx"
+      ],
+      "rules": {
+        "no-process-env": "off"
+      }
+    },
+    {
+      "files": [
+        "*.ts",
+        "*.tsx"
+      ],
+      "rules": {}
+    },
+    {
+      "files": [
+        "*.js",
+        "*.jsx"
+      ],
+      "rules": {}
+    }
+  ]
+}
+"
+`;
+
+exports[`convex generator snapshots should generate files 3`] = `
+"{
+  "extends": "../tsconfig.base.json",
+  "compilerOptions": {
+    "module": "ESNext",
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "noImplicitOverride": true,
+    "noPropertyAccessFromIndexSignature": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true
+  },
+  "files": [],
+  "include": [],
+  "references": [
+    {
+      "path": "./tsconfig.lib.json"
+    },
+    {
+      "path": "./tsconfig.spec.json"
+    }
+  ],
+  "exclude": [
+    "./convex/_generated/**/*"
+  ]
+}
+"
+`;
+
+exports[`convex generator snapshots should generate files 4`] = `
+"{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "outDir": "../dist/out-tsc",
+    "declaration": true,
+    "types": [
+      "node"
+    ]
+  },
+  "include": [
+    "src/**/*.ts",
+    "convex/**/*.ts"
+  ],
+  "exclude": [
+    "vite.config.ts",
+    "src/**/*.spec.ts",
+    "src/**/*.test.ts",
+    "convex/**/*.spec.ts",
+    "convex/**/*.test.ts"
+  ]
+}
+"
+`;
+
+exports[`convex generator snapshots should generate files 5`] = `
+"{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "outDir": "../dist/out-tsc",
+    "types": [
+      "vitest/globals",
+      "vitest/importMeta",
+      "vite/client",
+      "node",
+      "vitest"
+    ]
+  },
+  "include": [
+    "vite.config.ts",
+    "vitest.config.ts",
+    "src/**/*.test.ts",
+    "src/**/*.spec.ts",
+    "src/**/*.test.tsx",
+    "src/**/*.spec.tsx",
+    "src/**/*.test.js",
+    "src/**/*.spec.js",
+    "src/**/*.test.jsx",
+    "src/**/*.spec.jsx",
+    "src/**/*.d.ts",
+    "convex/**/*.test.ts",
+    "convex/**/*.spec.ts",
+    "convex/**/*.test.tsx",
+    "convex/**/*.spec.tsx",
+    "convex/**/*.test.js",
+    "convex/**/*.spec.js",
+    "convex/**/*.test.jsx",
+    "convex/**/*.spec.jsx",
+    "convex/**/*.d.ts"
+  ]
+}
+"
+`;
+
+exports[`convex generator snapshots should generate files 6`] = `
+"import { defineConfig } from 'vite';
+import { nxViteTsPaths } from '@nx/vite/plugins/nx-tsconfig-paths.plugin';
+export default defineConfig({
+    root: __dirname,
+    cacheDir: '../node_modules/.vite/test',
+    plugins: [nxViteTsPaths(),
+    ],
+    // Uncomment this if you are using workers. 
+    // worker: {
+    //  plugins: [ nxViteTsPaths() ],
+    // },
+    test: {
+        '': watch, '': false,
+        '': globals, '': true,
+        '': environment, '': "jsdom",
+        '': include, '': ["src/**/*.{test,spec}.{js,mjs,cjs,ts,mts,cts,jsx,tsx}"],
+        '': reporters, '': ["default"],
+        '': coverage, '': { "reportsDirectory": "../coverage/test", "provider": "v8" },
+        '"reportsDirectory"': "../coverage/test",
+        '"provider"': "v8",
+        'globals': true,
+        'environment': "edge-runtime",
+        'include': ["src/**/*.{test,spec}.{js,mjs,cjs,ts,mts,cts,jsx,tsx}"],
+        'reporters': ["default"],
+        'coverage': { "reportsDirectory": "../coverage/test", "provider": "v8" },
+    },
+});"
+`;
