@@ -4,6 +4,11 @@
       "factory": "./src/generators/convex/generator",
       "schema": "./src/generators/convex/schema.json",
       "description": "convex generator"
+    },
+    "linting": {
+      "factory": "./src/generators/linting/generator",
+      "schema": "./src/generators/linting/schema.json",
+      "description": "linting generator"
     }
   }
 }
