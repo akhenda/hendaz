@@ -4,7 +4,7 @@
   "description": "Projects build & runtime configs",
   "author": "J.A.",
   "dependencies": {
-    "@swc/helpers": "0.5.12",
+    "@swc/helpers": "0.5.13",
     "envalid": "8.0.0",
     "next-zodenv": "0.3.0",
     "zod": "3.23.8"
