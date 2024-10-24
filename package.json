@@ -78,7 +78,7 @@
     "@expo/cli": "~0.18.13",
     "@hendacorp/eslint-plugin": "1.0.5",
     "@hendaz/eslint-config": "workspace:*",
-    "@nx-extend/shadcn-ui": "3.1.0",
+    "@nx-extend/shadcn-ui": "4.1.1",
     "@nx/devkit": "19.6.3",
     "@nx/esbuild": "19.6.3",
     "@nx/eslint": "19.6.3",
