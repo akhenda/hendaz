@@ -2,11 +2,11 @@
   "name": "@hendaz/workspace",
   "version": "0.0.1",
   "dependencies": {
-    "@nx/devkit": "19.8.14",
+    "@nx/devkit": "23.2.0",
     "tslib": "^2.3.0",
-    "@nx/js": "19.8.14",
-    "@nx/eslint": "19.8.14",
-    "@nx/vite": "19.8.14",
+    "@nx/js": "23.2.0",
+    "@nx/eslint": "23.2.0",
+    "@nx/vite": "23.2.0",
     "typescript": "5.8.3",
     "@phenomnomnominal/tsquery": "^6.1.3"
   },
