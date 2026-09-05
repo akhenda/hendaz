@@ -4,7 +4,7 @@
   "description": "Shareable browserslist configuration",
   "author": "J.A.",
   "dependencies": {
-    "@swc/helpers": "0.5.17"
+    "@swc/helpers": "0.5.23"
   },
   "type": "commonjs",
   "main": "./src/index.js",

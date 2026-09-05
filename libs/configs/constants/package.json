@@ -4,10 +4,10 @@
   "description": "Projects build & runtime configs",
   "author": "J.A.",
   "dependencies": {
-    "@swc/helpers": "0.5.17",
-    "envalid": "8.0.0",
+    "@swc/helpers": "0.5.23",
+    "envalid": "8.2.0",
     "next-zodenv": "0.3.0",
-    "zod": "3.25.67"
+    "zod": "3.25.76"
   },
   "type": "commonjs",
   "main": "./index.js",
