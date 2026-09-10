@@ -21,4 +21,4 @@ runs:
       run: bun install --no-cache
 
     - name: 🔐 Set SHAs
-      uses: nrwl/nx-set-shas@v4
+      uses: nrwl/nx-set-shas@v5
